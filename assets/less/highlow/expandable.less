@@ -1,0 +1,43 @@
+.expandable {
+	.expandable-header {
+		font-weight: 600;
+		line-height: 1.25em;
+		padding: 0.75em 1.25em 0.5em;
+		background: white;
+		position: relative;
+		cursor: pointer;
+		.plus {
+			position: absolute;
+			right: 0.5em;
+			top: 0.5em;
+			> .vertical {
+				background-color: @peach;
+			}
+			> .horizontal {
+				background-color: @peach;
+			}
+		}
+	}
+	.expandable-content-wrapper {
+		overflow: hidden;
+		font-size: 0.9125em;
+		line-height: 1.533em;
+		.expandable-content {
+			margin: 1em 0em 1.25em;
+			padding: 0em 1.25em;
+			font-family: Arial, sans-serif;
+		}
+		.transition(all 0.3s ease);
+	}
+
+	&.expanded {
+		.expandable-header {
+			.plus {
+				> .vertical {
+					display: none;
+				}
+			}
+		}
+	}
+	margin-bottom: 1em;
+}

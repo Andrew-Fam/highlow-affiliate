@@ -1,0 +1,47 @@
+.full-width {
+	width: 100%;
+}
+
+.centered {
+	margin-left: auto;
+	display: block!important;
+	margin-right: auto;
+}
+.text-centered {
+	text-align: center;
+}
+
+.container, .container-fluid {
+	position: relative;
+}
+
+.fade-able {
+	.opacity(100);
+	.transition(@fade-transition);
+	z-index: 1;
+	&.faded {
+		.opacity(00);
+		filter: alpha(opacity=00);
+		z-index: -1;
+	}
+}
+
+.fade {
+	.opacity(00);
+	filter: alpha(opacity=00);
+	z-index: -1;
+	.transition(@fade-transition);
+	&.in {
+		.opacity(100);
+		.transition(@fade-transition);
+		z-index: 1;
+	}
+}
+
+.fluid-width  {
+	max-width: 100%;
+}
+
+#tour-down {
+	cursor: pointer;
+}

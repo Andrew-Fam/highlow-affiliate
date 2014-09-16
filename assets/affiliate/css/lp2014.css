@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {font-size: 13px;margin: 0px;padding:0px;line-height: 20px;height:100%; background-color:#242424;
+font-family:"メイリオ", Meiryo, Osaka,sans-serif;}
+html, #Container {height:100%; margin:0; padding:0;}
+body > #Container {height: auto; min-height:100%;}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+h1, h2, h3, h4, h5, h6, p, pre, blockquote{margin: 0;padding: 0;}
+
+.Clear {clear: both;font: 0pt/0pt sans-serif;height: 0;}
+.ClearLeft {clear: left;font: 0pt/0pt sans-serif;}
+
+img {border: 0px;}
+a:link, a:visited{ color:#FFF;text-decoration: none;}
+a:hover{color: #f8b62b;text-decoration: underline;}
+a:focus {outline: 0 !important; } 
+
+.Mar5{ margin-bottom:5px;}
+.Mar10{ margin-bottom:10px;}
+.Mar15{ margin-bottom:15px;}
+.Mar20{ margin-bottom:20px;}
+.Mar30{ margin-bottom:30px;}
+.Text15{ font-size:15px;}
+.Text18{ font-size:18px;}
+.Text20{ font-size:20px;}
+
+/* Layout
+*******************************************************************************************************************/
+#container{position: relative;}
+#Main{background:url(../img/main_bg.gif) repeat;max-height: 999999px;}
+#Camp{ background-color:#fcc309; padding:80px 0;max-height: 999999px;}
+#Info{background:url(../img/info_bg.png) repeat #0dc3d2; background-attachment: fixed; padding:80px 0;max-height: 999999px;}
+#Pay{background: url(../img/pay_down.png) repeat #92c538;background-attachment: fixed;max-height: 999999px; }
+#Sp{background: url(../img/sp_down.png) repeat #9b70af;background-attachment: fixed;max-height: 999999px;}
+#Demo{ background-color:#f8af12; padding:80px 0;max-height: 999999px;}
+#Btm{ padding:60px 0;max-height: 999999px;}
+#TopWrap, #CampWrap, #InfoWrap, #PayWrap, #SpWrap, #DemoWrap, #BtmWrap{ width:1000px; margin:0 auto;}
+
+#Spup {background: url(../img/sp_up.png) repeat;background-attachment: fixed; padding:80px 0;}    
+#Payup {background: url(../img/pay_up.png) repeat;background-attachment: fixed; padding:80px 0;}    
+
+/* Basic
+*******************************************************************************************************************/
+.Inner10{ padding:0 10px;}
+.TB01{ font-size:14px; margin-bottom:20px; padding:0 10px; line-height:22px;}
+.TB02{ font-size:13px; margin-bottom:20px; padding:0 10px; line-height:22px;}
+
+/* top
+*******************************************************************************************************************/
+#TopWrap .Left{ float:left;}
+#TopWrap h1{ font-size:11px; padding:3px 0;color:#FFFFFF;}
+#TopWrap .Rgiht{ float:right;}
+
+#MainWrap{width:1000px; margin:0 auto; position:relative;}
+#MainWrap #hand{
+  width:34px;
+  height:42px;
+  position:absolute;
+  top:210px;
+  left:80px;
+}
+
+
+/* campaign
+*******************************************************************************************************************/
+#CampCon{background:url(../img/cam_pict.png) no-repeat 5px center; padding-left:200px;}
+
+/* HIGHLOW
+*******************************************************************************************************************/
+.InfoT{background:url(../img/dot.png) repeat-x bottom left; padding:0 10px 12px 10px; margin-bottom:15px; font-size:18px; font-weight:bold; color:#FFF;}
+.SFtd01{ font-size:12px; font-weight:bold; background-color:#FFF; padding:15px; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; text-align:center;}
+.SFtd02{ font-size:13px; font-weight:bold; background-color:#2388ad; padding:15px; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; text-align:center; color:#FFF;}
+.SFtd03{ font-size:13px; font-weight:bold; background-color:#FFF; padding:15px; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; text-align:center;}
+.SFtd04{ font-size:14px; font-weight:bold; background-color:#ff9f13; padding:15px; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; text-align:center; color:#FFF;}
+
+/* SmartPhone
+*******************************************************************************************************************/
+.SubT{ font-size:18px; font-weight:bold; padding:0px 0px 0px 0px; margin-bottom:7px; color:#FFFFFF;}
+.SPtdText{ line-height:18px; margin-bottom:10px;}
+.SPtd{ font-size:12px; font-weight:bold; padding:15px; border-radius: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px; border:solid 1px #FFF; color:#FFFFFF;}
+.SPLine{border-bottom: 1px dotted #FFF; margin-bottom:10px;}
+.SPText11{ line-height:16px;font-size:11px; margin-bottom:10px;color:#FFF;}
+.SPI{background: url(../img/sp_i.png) no-repeat center top; padding:20px 100px 10px 92px; margin-bottom:10px; height:66px; font-size:11px; line-height:13px; text-align:center; color:#000;}
+.SPG{background: url(../img/sp_a.png) no-repeat center top; padding:20px 100px 10px 92px; margin-bottom:10px; height:66px; font-size:11px; line-height:13px; text-align:center;color:#000;}
+#SPInfo{ background-color:#FFFFFF; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; padding:20px;}
+
+/* Depo
+*******************************************************************************************************************/
+#Pay01{background:url(../img/pay_pict01.png) no-repeat 5px top; padding-left:200px; margin-bottom:50px;}
+#Pay02{background:url(../img/pay_pict02.png) no-repeat 5px top; padding-left:200px;}
+#PayInfo{background:url(../img/pay_info.png) no-repeat 15px center #FFF;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; padding:25px 25px 25px 68px;}
+
+/* Demo
+*******************************************************************************************************************/
+#DemoBtn{ width:550px; margin:0 0 0 225px;}
+
+/* Bottom
+*******************************************************************************************************************/
+#EntryPosi{ height:95px; background-color:#666;}
+#LiskT{background:url(../img/lisk_icon.png) no-repeat 5px top; font-size:18px; color:#FFF; margin-bottom:10px; padding-left:32px; line-height:24px;}
+#LiskText{ font-size:14px; color:#FFF; line-height:24px; margin-bottom:40px;}
+#Copy{ font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#FFF; text-align:center;}
+#Copy img{ margin-right:8px; vertical-align:-2px;}
+
+.entry{background:url(../img/entry_bg.png) repeat;position: fixed;text-align:center;width:100%; padding:10px 0; position: relative;}
+.entry img{vertical-align: bottom;}
+.pagetop{position: absolute;  top:10px; right:10px;}

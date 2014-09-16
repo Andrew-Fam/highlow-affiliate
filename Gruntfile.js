@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 					port: 9001,
 					base: './build/',
 					keepalive: true,
-					hostname: 'localhost'
+					hostname: '0.0.0.0'
 				}
 			}
 		},
@@ -27,6 +27,20 @@ module.exports = function(grunt) {
 					sourceMap: true,
 					sourceMapFilename: 'assets/css/main.css.map',
 					sourceMapURL: '/assets/css/main.css.map',
+					sourceMapRootpath: '/'
+				}
+			},
+			ie8: {
+				files: {
+					'assets/css/ie8.min.css': [
+						'assets/less/ie8.less'
+					]
+				},
+				options: {
+					compress: true,
+					sourceMap: true,
+					sourceMapFilename: 'assets/css/ie8.min.css.map',
+					sourceMapURL: '/assets/css/ie8.min.css.map',
 					sourceMapRootpath: '/'
 				}
 			}
@@ -56,10 +70,11 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: [{
-					src: ['html/*.html'],
-					dest: ['build/'],
 					expand: true,
-					flatten: false
+					flatten: false,
+					cwd: 'html/',
+					src: ['**/*.html'],
+					dest: 'build/'
 				}]
 			}
 		},
@@ -103,19 +118,20 @@ module.exports = function(grunt) {
 				}
 			},
 			html: {
-				files: ['**/*.html'],
+				files: ['html/*.html'],
+				tasks: ['newer:copy:html'],
 				options: {
 					livereload: true
 				}
 			},
 			copy: {
-				files: ['assets/**/*.*','html/*.html'],
+				files: ['assets/**/*.*'],
 				tasks: ['newer:copy']
 			}
 		},
 		concurrent: {
 			all: {
-				tasks: ['newer:requirejs', 'connect:server', 'watch'],
+				tasks: ['connect:server', 'watch'],
 				options: {
 					logConcurrentOutput: true
 				}

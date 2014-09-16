@@ -1,0 +1,36 @@
+/*
+ * jQuery UI Bootstrap v1.0 Alpha
+ *
+ * jQuery UI Autocomplete 1.10.3
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ *
+ * Portions copyright Addy Osmani, jQuery UI & Twitter Bootstrap
+ * Created the LESS version by @dharapvj
+ * Released under MIT
+ */
+.ui-autocomplete {
+	top: 0;
+	left: 0;
+	cursor: default;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	padding: 0 !important;
+	max-height: 300px;
+	overflow: auto;
+	.dropdown-menu;
+	position: fixed !important;
+	z-index: 103 !important;
+	
+	li {
+		border-top: 1px #ccc solid !important; 
+		
+		&:first-child {
+			border-top: none !important;
+		}
+		
+		a {
+			cursor: pointer !important;
+			padding: 5px 10px 3px !important;
+		}
+	}
+}

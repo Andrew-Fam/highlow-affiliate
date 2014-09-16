@@ -1,0 +1,57 @@
+.testimonials {
+	background-color: @congee;
+	padding: 57px 0px 47px;
+	position: relative;
+	.testimonials-container {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		.testimonial {
+			width: 100%;
+			.quote {
+				color: @mouse;
+				font-weight: 400;
+				line-height: 1.5em;
+				margin: 0;
+				padding: 0;
+			}
+			.testee {
+				color: #9a9ca2;
+				font-size: 12px;
+				line-height: 30px;
+				margin-top: 0;
+				margin-bottom: 23px;
+			}
+		}
+	}
+	ul {
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.carousel-indicators {
+		position: relative;
+		bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		> li {
+			width: 14px;
+			height: 14px;
+			border-color: @another-red-shade;
+			margin: 0px;
+			margin-right: 5px;
+			background-color: transparent;
+			&.active {
+				height: 14px;
+				width: 14px;
+				margin-top: 0px;
+				background: @another-red-shade!important;
+			}
+			&.last-child,
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}

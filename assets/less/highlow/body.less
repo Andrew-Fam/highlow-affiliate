@@ -1,0 +1,26 @@
+body {
+	font-family: @font-verb;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	.visible-logged-in {
+		display: none;
+	}
+	.hidden-logged-in {
+		display: block;
+	}
+	&.logged-in {
+		.visible-logged-in {
+			display: block;
+		}
+		.hidden-logged-in {
+			display: none;
+		}
+	}
+}
+
+
+body.mac *, body.mac {
+	-webkit-text-stroke: 0px!important;
+}

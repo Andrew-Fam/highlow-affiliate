@@ -1,0 +1,59 @@
+.panel {
+	border: none;
+	border-radius: 0px;
+	> .panel-heading {
+		border-radius: 0px;
+		padding: 1em 1.25em 0.75em;
+		.clearfix();
+		.panel-title {
+			font-family: @font-mont; -webkit-text-stroke: 0.45px;
+			font-size: 0.8125em;
+			float: left;
+		}
+		.panel-header-control {
+			color: @metal;
+			float: right;
+			display: block;
+			&:hover {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+	> .panel-body {
+		border: none;
+		padding: 1.375em 1.25em 0.5em;
+		font-size: 0.875em;
+		color: white;
+	}
+	&.wide-padding {
+		> .panel-heading {
+			border-radius: 0px;
+			padding: 1em 2em 0.75em;
+		}
+		> .panel-body {
+			border: none;
+			padding: 1.75em 2em 1em;
+			font-size: 0.875em;
+			color: white;
+		}
+	}
+	> .panel-footer {
+		border: none;
+		padding: 0.5em 1.25em 1.25em;
+		border-radius: 0px;
+		.btn {
+			display: block;
+			float: left;
+			min-width: 15.5em;
+			margin-right: 1.5em;
+			padding: 1em 1.25em 0.75em;
+			text-align: center;
+			&.last-child {
+				margin-right: 0;
+			}
+		}
+		.clearfix();
+	}
+	margin-bottom: 2em;
+}

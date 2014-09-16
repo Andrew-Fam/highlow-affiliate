@@ -1,244 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Welcome!</title>
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-        <meta name="description" content="Welcome!" />
-        <meta name="keywords" content="Welcome!" />
-        <meta name="robots" content="index, follow" />
-                <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/2e5e0bd1-30ae-4c53-bc44-c7210eefe52c.css"/>
-        <link href="affiliate/css/affiliate.css" rel="stylesheet"/>
+<head>
+	<meta charset="utf-8" />
+	<title>Welcome!</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="description" content="Welcome!" />
+	<meta name="keywords" content="Welcome!" />
+	<meta name="robots" content="index, follow" />
+	<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/2e5e0bd1-30ae-4c53-bc44-c7210eefe52c.css"/>
+	<link href="assets/css/main.css" rel="stylesheet"/>
         <!--[if lt IE 9]>
-            <link href="public/css/ie8.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <![endif]-->
+            <link href="assets/css/ie8.min.css" rel="stylesheet" type="text/css" media="all"/>
+            <![endif]-->
                 <!--[if lt IE 9]>
-        <script src="public/js/html5shiv.min.js"></script>
-        <script src="public/js/respond.min.js"></script>
+        <script src="assets/scripts/html5shiv.min.js"></script>
+        <script src="assets/scripts/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body class="en splash" id="home">
-    			<header>
-			<nav class="navbar navbar-default splash-nav " role="navigation">
-				<div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        	<span class="sr-only"></span>
-			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span>
-			      	</button>
-					
-					<a href='/en/' class="high-low pull-left icon"></a>
-			    </div>
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    	<ul class="nav navbar-nav navbar-right">
-			        	<li ><a href="index.html">AFFILIATES</a></li>
-			            <li class="active"><a href="contact.html">CONTACT US</a></li>
-			            			            <li ><a href="signup.html">SIGN UP</a></li>
-			            <li ><a href="signin.html"> <span class="icon sign-in"></span> SIGN IN</a></li>
-			            			      </ul>
-			    </div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-		</header>
-		<div class="modal fade" id="signin-popup" tabindex="-1" role="dialog" > 
-  			<div class="modal-dialog">
-      			<div class="modal-content">
-        			<div class="modal-header">
-          				<h4 class="modal-title" id="signin-popup-label">
-          					<span class="icon user-border-less"></span> SIGN IN TO AFFILIATES  
-          					<button type="button" class="close icon" data-dismiss="modal">
-          						<span class="sr-only">Close</span>
-          					</button>
-          				</h4>
-        			</div>
-			        <div class="modal-body">
-						<div class="form-wrapper padding-less">
-			          		<div id="form-login-error"></div>
-			            	<form method="post" action="/en/login_check" id="form-login">
-			              		<div class="row">
-			                		<div class="col-sm-6">
-			                  			<div class="input-wrap label-on-top">
-			                    			<label>User Name</label>
-			                    			<input type="text" name="_username" class="form-control" />
-			                  			</div>
-			                		</div>
-			                		<div class="col-sm-6">
-			                  			<div class="input-wrap label-on-top">
-				                    		<label>Password</label>
-				                    		<input type="password" name="_password" class="form-control" />
-			                  			</div>
-			                		</div>
-			              		</div>
-			              		<input type="submit" style="display: none;" >
-			            	</form>
-			          	</div>
-			        </div>
-			        <div class="modal-footer clearfix">
-			          	<div class="modal-footer-pseudo-table">
-			            	<div class="row">
-			              		<small class="col-sm-6">
-			                		<a href="/en/forgot-password">Forgot Password?</a>
-			              		</small>
-			              		<div class="col-sm-6 modal-action">
-			                		<button id="login-trigger-button" class="btn btn-default btn-lg btn-extruded pull-right">
-			                  			SIGN IN
-			                		</button>
-			              		</div>
-			            	</div>
-			          	</div>
-			        </div>
-      			</div>
-  			</div>
-		</div>
-		    	<div class="hero heading-only">
-	<img src="public/images/home-bg.jpg" class="bg">
-	<div class="container">
-		<h1>CONTACT HIGHLOW
-		</h1>
-	</div>
-</div>
-<div class="wizard">
-	<div class="wizard-progress">
-		<div class="container">
-			<div class="step-title-wrapper hidden-xs" style="float: none;">
-				<div class="step-title current">
-					<p class="section-sub-title" style="text-align: center;">
-						If you have any questions about HIGHLOW and our Affiliate program,<br/>
-						complete the form below and we'll be in touch.
-				
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="wizard-pane-wrapper form-wrapper">
-		<div class="container">
-			<div id="step-1" class="wizard-step current">
-				<h3 class="section-title">
-					Contact Us Form
-				</h3>
-				<form method="post" class="validate">
-		  			<div class="form-group row">
-		  				<div class="col-sm-6 first-half clearfix">
-		  					<label  for="affiliate_contact_firstName" class="first-child required"><span class="first-child last-child">
-        		First Name
-        	</span></label>
-		  					        <div class="input-wrap"><input type="text" id="affiliate_contact_firstName" name="affiliate_contact[firstName]" required="required" data-rule-required="true" data-msg-required="First Name is required" class="form-control first-child last-child" /></div>
+    <body class="en splash affiliate" id="home">
+    	<header>
+    		<nav class="navbar navbar-default splash-nav " role="navigation">
+    			<div class="container-fluid">
+    				<!-- Brand and toggle get grouped for better mobile display -->
+    				<div class="navbar-header">
+    					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    						<span class="sr-only"></span>
+    						<span class="icon-bar"></span>
+    						<span class="icon-bar"></span>
+    						<span class="icon-bar"></span>
+    					</button>
 
-		  					
-		  				</div>
-		  				<div class="col-sm-6 second-half clearfix">
-		  					<label  for="affiliate_contact_email" class="first-child required"><span class="first-child last-child">
-        		Email
-        	</span></label>
-		  					<div class="input-wrap"><input type="email" id="affiliate_contact_email" name="affiliate_contact[email]" required="required" data-rule-required="true" data-rule-email="true" data-msg="Please enter a valid Email Address" class="form-control first-child last-child" /></div>
-		  					
-		  				</div>
-		  			</div>
-		  			<div class="form-group row">
-						<div class="col-md-12 clearfix full-width">
-							<label  for="affiliate_contact_message" class="first-child required"><span class="first-child last-child">
-        		Comment
-        	</span></label>
-							<div class="input-wrap">
-								        <textarea id="affiliate_contact_message" name="affiliate_contact[message]" required="required" class="form-control"></textarea>
-
-								
-							</div>
-						</div>
-					</div>
-		  			<div class="form-footer clearfix" style="background: #4D5258; padding: 20px;">
-		  				<div class="col-sm-6 first-half clearfix">
-		  				</div>
-		  				<button class="wizard-next-step btn btn-default btn-lg btn-extruded pull-right" type="submit">
-		  					Submit Enquiry
-		  				</button>
-		  			</div>
-		  			<div class="input-wrap"><input type="hidden" id="affiliate_contact__token" name="affiliate_contact[_token]" class="form-control first-child last-child" value="IVhfxCL7coLSLkJtul-l03SO02Ry7lPxeRq4NKbm89g" /></div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+    					<a href='index.html' class="high-low pull-left icon"></a>
+    				</div>
+    				<!-- Collect the nav links, forms, and other content for toggling -->
+    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    					<ul class="nav navbar-nav navbar-right">
+    						<li ><a href="index.html">AFFILIATES</a></li>
+    						<li class="active"><a href="contact.html">CONTACT US</a></li>
+    						<li ><a href="signup.html">SIGN UP</a></li>
+    						<li ><a class="highlight" href="signin.html"> <span class="icon sign-in"></span>AFFLIATE LOGIN</a></li>
+    					</ul>
+    				</div><!-- /.navbar-collapse -->
+    			</div><!-- /.container-fluid -->
+    		</nav>
+    	</header>
+    	<div class="modal fade" id="signin-popup" tabindex="-1" role="dialog" > 
+    		<div class="modal-dialog">
+    			<div class="modal-content">
+    				<div class="modal-header">
+    					<h4 class="modal-title" id="signin-popup-label">
+    						<span class="icon user-border-less"></span> SIGN IN TO AFFILIATES  
+    						<button type="button" class="close icon" data-dismiss="modal">
+    							<span class="sr-only">Close</span>
+    						</button>
+    					</h4>
+    				</div>
+    				<div class="modal-body">
+    					<div class="form-wrapper padding-less">
+    						<div id="form-login-error"></div>
+    						<form method="post" action="/en/login_check" id="form-login">
+    							<div class="row">
+    								<div class="col-sm-6">
+    									<div class="input-wrap label-on-top">
+    										<label>User Name</label>
+    										<input type="text" name="_username" class="form-control" />
+    									</div>
+    								</div>
+    								<div class="col-sm-6">
+    									<div class="input-wrap label-on-top">
+    										<label>Password</label>
+    										<input type="password" name="_password" class="form-control" />
+    									</div>
+    								</div>
+    							</div>
+    							<input type="submit" style="display: none;" >
+    						</form>
+    					</div>
+    				</div>
+    				<div class="modal-footer clearfix">
+    					<div class="modal-footer-pseudo-table">
+    						<div class="row">
+    							<small class="col-sm-6">
+    								<a href="/en/forgot-password">Forgot Password?</a>
+    							</small>
+    							<div class="col-sm-6 modal-action">
+    								<button id="login-trigger-button" class="btn btn-default btn-lg btn-extruded pull-right">
+    									SIGN IN
+    								</button>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="hero heading-only">
+    		<img src="assets/images/contact-bg.jpg" class="bg">
+    		<div class="container">
+    			<h1>CONTACT HIGHLOW
+    			</h1>
+    		</div>
+    	</div>
+    	<div class="wizard affiliate-contact">
+    		<div class="wizard-progress">
+    			<div class="container">
+    				<div class="row">
+    					<div class="step-title-wrapper col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+    						<div class="step-title current">
+    							<p class="section-sub-title">
+    								If you have any questions about HIGHLOW and our Affiliate program,<br/>
+    								complete the form below and we'll be in touch.
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="wizard-pane-wrapper form-wrapper">
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+    						<div id="step-1" class="wizard-step current">
+    						<form method="post" class="validate">
+    							<div class="row">
+    								<div class="form-group col-sm-6 first-half clearfix">
+    									<label  for="affiliate_contact_firstName" class="first-child required"><span class="first-child last-child">
+    										First Name
+    									</span></label>
+    									<div class="input-wrap">
+	    									<input type="text" id="affiliate_contact_firstName" name="affiliate_contact[firstName]" required="required" data-rule-required="true" data-msg-required="First Name is required" class="form-control first-child last-child" />
+	    								</div>
+    								</div>
+    								<div class="form-group col-sm-6 second-half clearfix">
+    									<label  for="affiliate_contact_email" class="first-child required"><span class="first-child last-child">
+    										Email
+    									</span></label>
+    									<div class="input-wrap">
+    										<input type="email" id="affiliate_contact_email" name="affiliate_contact[email]" required="required" data-rule-required="true" data-rule-email="true" data-msg="Please enter a valid Email Address" class="form-control first-child last-child" />
+    									</div>
+    								</div>
+    							</div>
+    							<div class="form-group row">
+    								<div class="col-md-12 clearfix full-width">
+    									<label  for="affiliate_contact_message" class="first-child required"><span class="first-child last-child">
+    										Comment
+    									</span></label>
+    									<div class="input-wrap">
+	    									<textarea id="affiliate_contact_message" name="affiliate_contact[message]" required="required" class="form-control"></textarea>
+	    								</div>
+    								</div>
+    							</div>
+    							<br/>
+    							<br/>
+								<button class="float-center btn btn-md btn-default btn-lg btn-extruded" type="submit">
+									SUBMIT ENQUIRY
+								</button>
+    							<input type="hidden" id="affiliate_contact__token" name="affiliate_contact[_token]" class="form-control first-child last-child" value="IVhfxCL7coLSLkJtul-l03SO02Ry7lPxeRq4NKbm89g" />	
+    						</form>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
     	<footer>
-	 <div class=" kapitall-strip">
- 	<div class="container ">
-      <div class="testi fade-able"> <a href="http://en.highlow.mppreview.com/">VISIT THE MAIN HIGHLOW WEBSITE  <span></span></a> </div>
-    </div>
-    </div>
-	<div class="container last-child">
-		<div class="clearfix first-child">
-			<div class="affiliation-wrapper first-child">
-				<div class="affiliation first-child">
-					<h3 class="first-child">
-						Lorem ipsum dolor
-					</h3>
-					<div class="clearfix last-child">
-						<div class="icon visa first-child">
-						</div>
-						<div class="icon master">
-						</div>
-						<div class="icon neteller last-child">
-						</div>
+    		<div class="dark-cta-strip">
+    			<div class="container">
+    				<a class="btn float-center btn-gold-transparent" href="http://en.highlow.mppreview.com/">VISIT THE MAIN HIGHLOW WEBSITE  <img src="assets/images/arrow_small.png"/></a> </div>
+    			</div>
+    		</div>
+    		<div class="container last-child">
+    			<div class="clearfix first-child">
+    				<div class="affiliation-wrapper first-child">
+    					<div class="affiliation first-child">
+    						<h3 class="first-child">
+    							Lorem ipsum dolor
+    						</h3>
+    						<div class="clearfix last-child">
+    							<div class="icon visa first-child">
+    							</div>
+    							<div class="icon master">
+    							</div>
+    							<div class="icon neteller last-child">
+    							</div>
+    						</div>
+    					</div>
+    					<div class="affiliation last-child">
+    						<h3 class="first-child">
+    							Lorem ipsum dolor
+    						</h3>
+    						<div class="clearfix last-child">
+    							<div class="icon nab first-child">
+    							</div>
+    							<div class="icon smbc last-child">
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="footer-cta-wrapper last-child">
+    					<div class="first-child" id="footer-mobile-app-cta-mobile" style="display:block">
+    						<h3 class="block header first-child">Download HighLow for your mobile</h3>
+    						<div class="clearfix last-child">
+    							<a class="icon block pull-left first-child" id="footer-android-icon" href="">
+    								Android
+    							</a>
+    							<a class="icon block pull-right last-child" id="footer-apple-icon" href="">
+    								App Store
+    							</a>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-xs-12 keyline first-child">
 					</div>
-				</div>
-				<div class="affiliation last-child">
-					<h3 class="first-child">
-						Lorem ipsum dolor
-					</h3>
-					<div class="clearfix last-child">
-						<div class="icon nab first-child">
-						</div>
-						<div class="icon smbc last-child">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-cta-wrapper last-child">
-				<div class="first-child" id="footer-mobile-app-cta-mobile" style="display:block">
-					<h3 class="block header first-child">Download HighLow for your mobile</h3>
-					<div class="clearfix last-child">
-						<a class="icon block pull-left first-child" id="footer-android-icon" href="">
-							Android
-						</a>
-						<a class="icon block pull-right last-child" id="footer-apple-icon" href="">
-							App Store
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="clearfix last-child">
-			<h5 class="first-child">
-				General Advice Disclaimer
-			</h5>
-			<small class="last-child">
-				This website is published and owned by Realtime Capital Markets Pty Ltd (ACN 143 553 628), holder of Australian Financial Services Licence number 364264. This licence authorises the licensee to carry on a financial services business in Australia, limited to providing the financial services covered by the licence. The products and services described on this site is not available for residents in countries where such distribution is not permitted by the laws of the country. The information contained in this website is of a general nature only, and does not take into account your personal circumstances, financial situation or needs. Dealing in binary options and our other over-the-counter derivative products carries significant risk, and you may lose all of your initial investments and in some cases, other than binary options, you may also incur losses that exceed your initial investments. You should read the Product Disclosure Statement for binary options dated 01/11/2013, the Financial Services Guide and consult your own professional advisors before deciding whether dealing in our financial products is suitable for you.
-			</small>
-		</div>
-	</div>
-</footer>        
-        <script src="public/js/jquery-1.11.1.min.js"></script>
-		<script src="public/js/isotope.pkgd.min.js"></script>
-		<script src="public/js/jquery.cookie.min.js"></script>
-		<script src="public/js/bootstrap.min.js"></script>
-		<script src="public/js/jquery-ui.min.js"></script>
-		<script src="affiliate/js/jquery.validate.min.js"></script>
-		<script src="affiliate/js/additional-methods.min.js"></script>
-		<script src="public/js/highlow-affiliate.js"></script>
-		<script type="text/javascript" src="affiliate/messenger/js/messenger.min.js"></script>
-    	<script type="text/javascript" src="affiliate/messenger/js/messenger-theme-flat.js"></script>
+    			</div>
+    			<div class="clearfix last-child">
+    				<h5 class="first-child">
+    					General Advice Disclaimer
+    				</h5>
+    				<small class="last-child">
+    					This website is published and owned by Realtime Capital Markets Pty Ltd (ACN 143 553 628), holder of Australian Financial Services Licence number 364264. This licence authorises the licensee to carry on a financial services business in Australia, limited to providing the financial services covered by the licence. The products and services described on this site is not available for residents in countries where such distribution is not permitted by the laws of the country. The information contained in this website is of a general nature only, and does not take into account your personal circumstances, financial situation or needs. Dealing in binary options and our other over-the-counter derivative products carries significant risk, and you may lose all of your initial investments and in some cases, other than binary options, you may also incur losses that exceed your initial investments. You should read the Product Disclosure Statement for binary options dated 01/11/2013, the Financial Services Guide and consult your own professional advisors before deciding whether dealing in our financial products is suitable for you.
+    				</small>
+    			</div>
+    		</div>
+    	</footer>        
+    	<script src="assets/scripts/jquery-1.11.1.min.js"></script>
+    	<script src="assets/scripts/isotope.pkgd.min.js"></script>
+    	<script src="assets/scripts/jquery.cookie.min.js"></script>
+    	<script src="assets/scripts/bootstrap.min.js"></script>
+    	<script src="assets/scripts/jquery-ui.min.js"></script>
+    	<script src="assets/affiliate/js/jquery.validate.min.js"></script>
+    	<script src="assets/affiliate/js/additional-methods.min.js"></script>
+    	<script src="assets/scripts/highlow-affiliate.js"></script>
+    	<script type="text/javascript" src="assets/affiliate/messenger/js/messenger.min.js"></script>
+    	<script type="text/javascript" src="assets/affiliate/messenger/js/messenger-theme-flat.js"></script>
     	<script>
     	$(document).ready(function(){
-		Messenger.options = {
-		    extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right',
-		    theme: 'flat'
-		}
-			    				    				    				    					});
+    		Messenger.options = {
+    			extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right',
+    			theme: 'flat'
+    		}
+    	});
     	</script>
-     </body>
-</html>
+    </body>
+    </html>

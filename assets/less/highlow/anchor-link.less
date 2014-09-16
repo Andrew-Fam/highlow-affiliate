@@ -1,0 +1,9 @@
+@anchor-link-hover: color @hover, background-color @hover, border-color @hover;
+
+a {
+	.transition(@anchor-link-hover);
+	color: inherit;
+	&:hover {
+		color: inherit;
+	}
+}

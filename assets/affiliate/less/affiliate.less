@@ -1,0 +1,165 @@
+@import url(../../public/less/highlow.less);
+@import "../../public/less/bootstrap/labels.less";
+@import "messenger.less";
+
+a{
+	font-family: @font-verb;
+	
+	&:hover {
+		text-decoration: none;
+	}
+	
+	&:focus {
+	  outline: 0 !important;
+	}
+}
+
+.btn {
+	font-family: @font-verb;
+
+	&:focus {
+	  outline: 0 !important;
+	}
+}
+
+.no-padding {
+	padding: 0;
+}
+.navbar-nav {
+	&.navbar-right {
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+header .nav a {
+	padding-top: 22px !important;
+	font-size: 13px !important;
+}
+
+.error-message {
+	display: inline-block !important;
+}
+
+.hero .headline .content {
+/*	padding: 2em;
+	padding-left: 10em;
+	margin-top: 4em;
+	text-align: left;*/
+}
+#home{
+ 	.hero {
+    	background: url("../images/affiliate-bg.jpg") no-repeat scroll center top / auto 120% rgba(0, 0, 0, 0);
+    	padding: 60px 0;
+    }
+    
+    .cta-strip {
+    	margin: 20px 0;
+    }
+}
+#home .hero .headline {
+    position: relative;
+}
+
+.hero {
+	.headline { 
+		.top-banner { 
+			padding-top:70px;
+			
+			p { 
+				margin:0 0 10px; 
+				width:21em; 
+			}
+		}
+		
+		h1 { 
+			font-size: 5.3125em; 
+			text-align: left;
+		}
+		
+		ul {
+			> li {
+			 font-size:14px; 
+			 font-weight:normal;
+			}
+		}
+	}
+	
+	.affiliate-img {
+    	text-align: center;
+	}
+	.affiliate-img img {
+	    margin: 0 auto;
+	    width: 85%;
+	    top: -70px;
+	    position: relative;
+	}
+} 
+
+.yellow-bg{ background:#ffe048; border-bottom:5px solid #ffc539; padding:40px 0;}
+.yellow-bg .number{font-family: 'Verb W01',Helvetica,Arial,sans-serif; font-weight:100; padding-top:4px;   font-size: 80px; line-height:80px;   color:#ee7045; }
+.yellow-bg p{ font-size:12px; padding:10px 12% 0 0 ; margin:0;  background:url(../images/arrow.png) no-repeat right center; background-size:auto auto;}
+.yellow-bg .col-md-4:last-child p{ background:none;}
+.yellow-bg p strong{ display:block; padding-bottom:10px;  }
+
+.signup_agreement{ padding-top:10px;}
+#affiliate_signup_agreement{ margin: 7px 12px 0 0; border:none; outline:none;}
+.form-wrapper label.agree-label{ float:left; line-height:0;}
+
+.fcs{ background:#ecebeb; padding:80px 0 70px; text-align:center; color:#686867;}
+.fcs h1{  border-bottom: none;  font-size: 1.25em; text-transform:uppercase; font-weight:normal; margin-bottom:20px;}
+.fcs p.section-sub-title{font-weight: 300; font-size:1.1em;}
+.fcs p.outline{ border:1px solid #f08461; padding:1em 0; font-weight:100; color:#383b40; margin:60px 0;}
+.fcs p.outline span{ color:#f08461; font-weight:bold;}
+.container2 .col-4 { background:#fff; float: left; margin-left: 3%;width: 22.7%; }
+.container2 .col-4:first-child{ margin-left:0;}
+.container2 h1{ background:#f08461; color:#fff; margin:0; padding:25px 0; text-transform:none; font-size:18px;}
+.container2 img{ padding:32px 0;}
+.container2 p{ width:85%; margin:0 auto; border-top:1px solid #d4d2d2; padding:32px 0;}
+
+.kapitall-strip .testi { position:relative; }
+.kapitall-strip .testi  a{ color:#ffc539; font-family: Montserrat,Futura,Verdana,Arial,sans-serif; font-weight:100; font-size:16px;} 
+.kapitall-strip .testi  a span{ width:8px; height:17px; background:url(../images/arrow_small.png) no-repeat center; padding-left:50px;}
+
+
+#home .hero { background:url(../images/affiliate-bg.jpg) no-repeat top center; background-size: auto 120%; padding:60px 0;}
+ #home .hero .headline{ position:relative;}
+ 
+ #login.hero { background:url(../images/login-bg.jpg) no-repeat 0 -10px; background-size:auto  120%; padding:60px 0;}
+/*#signup .hero .headline .top-banner{ padding-top:0;}
+#signup .hero .headline h1{ text-align:center; padding:70px 0 60px;} 
+#signup .yellow-bg{ text-align:center; border:none;}
+#signup .yellow-bg p{ color:#2c2f35; width:65%; margin:0 auto; padding:0; background:none; font-size:1.2em;}*/
+
+#login .signin { margin:80px auto; color:#fff; background:rgba(33,33,36, 0.5); padding:5px;}
+#login h1.section-title{background:#272a2f 10px 35px; padding:30px 40px;  border:none;}
+.login-form{ background:#3e424a; padding:2%;}   
+.login-form .row{ padding:30px 0; border-bottom:1px solid  #494d54; width:99%; margin:0 auto;}
+.login-form .row:last-child{ border-bottom:none;}
+.login-form label{  color: #9A9CA2; font-size: 0.9em;  font-weight: normal;}
+
+.login-form .btn{ width:100%;}
+a.forgot-pw{ color:#9a9ca2; font-size:0.8em; font-style:italic;}
+
+
+@media (max-width:768px) {
+	.yellow-bg .col-md-4.col-sm-4{ clear:both; padding:15px 0; }
+	.yellow-bg .col-md-4.col-sm-4 p{ background:none;}
+	.container2 .col-4 { margin-left: 0;  width: 100%; margin-bottom:25px;}
+	
+}
+
+
+@main-nav-width : 230px;
+@main-nav-link-color : #757679;
+@main-nav-link-bg : #33363D;
+@main-nav-link-color-active: #EE5826;
+@main-nav-link-color-active-border: #DF250C;
+
+// Custom Components
+@import "../../font-awesome/less/font-awesome.less";
+@import "../custom-less/daterangepicker.less";
+
+@import url(buttons.less);
+@import url(post-login.less);

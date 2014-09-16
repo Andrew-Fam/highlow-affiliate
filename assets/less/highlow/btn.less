@@ -1,0 +1,98 @@
+.btn {
+	font-family: @font-mont; 
+	font-weight: 400;
+	display: inline-block;
+	text-align: center;
+	&:hover {
+		text-decoration: none;
+	}
+	.transition(@button-transition);
+	&.btn-alternate {
+		background-color: @btn-alternate-bg;
+		color: @btn-alternate-color!important;
+	
+		&:hover {
+			color: white!important;
+			background-color: darken(@btn-alternate-bg, @hover-lighten-weak)!important;
+		}
+		&.btn-extruded {
+			border-bottom: 3px solid @btn-alternate-border-color;
+			&:active {
+				border-top: 2px solid transparent;
+				border-bottom-width: 1px;
+			}
+		}
+	}
+	&.btn-default {
+		background-color: @btn-default-bg;
+		color: @btn-default-color!important;
+		&.btn-extruded {
+			border-bottom: 3px solid @btn-default-border-color;
+			&:active {
+				border-top: 2px solid transparent;
+				border-bottom-width: 1px;
+			}
+		}
+		&:hover {
+			color: darken(@btn-default-color,@hover-lighten-weak);
+			background-color: lighten(@btn-default-bg, @hover-lighten-medium)!important;
+		}
+		
+	}
+	&.btn-gold-transparent {
+		background: none;
+		color: @mustard;
+		&:hover {
+			color: darken(@mustard,@hover-lighten-weak);
+		}
+	}
+	&.btn-clear {
+		background-color: transparent;
+		color: @btn-alternate-bg!important;
+		&:hover {
+			color: darken(@btn-alternate-bg, @hover-lighten-weak)!important;
+		}
+		&.btn-extruded {
+			border-bottom: 3px solid @btn-alternate-bg;
+			&:active {
+				border-top: 2px solid transparent;
+				border-bottom-width: 1px;
+			}
+		}
+	}
+	&.btn-grey {
+		color: @mouse!important;
+	}
+	&.btn-sm {
+		font-weight: normal;
+		letter-spacing: 0.05em!important;
+		font-size: 10px!important;
+		&.btn-extruded {
+			border-bottom-width: 2px;
+			&:active {
+				border-top: 1px solid transparent;
+				border-bottom-width: 1px;
+			}
+		}
+	}
+	&.btn-md {
+		font-weight: normal;
+		letter-spacing: 0.05em;
+		font-size: 14px!important;
+	}
+	&.btn-lg {
+		-webkit-text-stroke: 0.45px;
+		font-size: 13px;
+		letter-spacing: 0.075em!important;
+		font-weight: 400;
+		padding: 1.125em 1.75em;
+		min-width: 17em;
+		max-width: 100%;
+	}
+
+}
+
+button.btn {
+	border: none;
+	font-weight: 400;
+}

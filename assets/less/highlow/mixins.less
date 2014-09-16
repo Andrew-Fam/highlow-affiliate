@@ -1,0 +1,24 @@
+/* functions */
+
+.opacity(@o) {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{o})";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=@o);
+
+  /* Netscape */
+  -moz-opacity: @o/100;
+
+  /* Safari 1.x */
+  -khtml-opacity: @o/100;
+
+  /* Good browsers */
+  opacity: @o/100;
+}
+
+.transition(@t) {
+	-moz-transition: @t;
+	-webkit-transition: @t; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: @t;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}

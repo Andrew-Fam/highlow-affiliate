@@ -1,0 +1,78 @@
+.wizard {
+	.wizard-progress {
+		background: @banana;
+		.step-title-wrapper {
+			float: left;
+			padding: 1em 0 0.75em;
+			.step-title {
+				.opacity(00);
+				padding-top: 1.5em;
+				position: absolute;
+				&.current {
+					.opacity(100);
+					position: relative;
+				}
+			}
+		}
+		.section-sub-title {
+			font-weight: 400;
+		}
+		.progress-indicator {
+			float: right;
+			padding-top: 2.5em;
+			.clearfix();
+			.progress {
+				width: 11.125em;
+				height: 0.225em;
+				float: left;
+				background-color: @mud;
+				border-radius: 0px;
+				margin-top: 0.65em;
+				margin-right: 1em;
+				.progress-bar {
+					background-color: @carrot;
+				}
+			}
+			.progress-text {
+				float: left;
+				font-size: 1.125em;
+				letter-spacing: -0.1em;
+			}
+		}
+	}
+	.wizard-pane-wrapper {
+		.wizard-step {
+			&:before {
+				content: "";
+				display: block;
+				height: 0;
+				width: 0;
+				border-style: solid;
+				border-top-width: 2.4375em;
+				border-left-width: 3.3125em;
+				border-right-width: 3.3125em;
+				border-color: transparent;
+				border-top-color: @banana;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -3.3125em;
+			}
+			padding-top: 2em;
+			padding-bottom: 4em;
+			display: none;
+			&.current {
+				display: block;
+			}
+		}
+	}
+	.form-wrapper {
+		h3 {
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
+		.form-footer {
+			margin-top: 2.5em;
+		}
+	}
+}

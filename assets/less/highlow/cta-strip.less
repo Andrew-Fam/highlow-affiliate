@@ -1,0 +1,40 @@
+.cta-strip {
+	.clearfix();	
+	padding: 1.5em 2em;
+	display: table;
+	width: 100%;
+	.cta-strip-pseudo-row {
+		display: table-row;
+	}
+	.cta-strip-title {
+		display: table-cell;
+		vertical-align: middle;
+		font-weight: 600;
+		font-size: 1.25em;
+		margin-bottom: 0;
+		img {
+			margin-right: 1.5em;
+		}
+	}
+	.cta-wrap {
+		display: table-cell;
+	}
+	.cta {
+		float: right;
+		.btn {
+			margin-left: 2em;
+		}
+	}
+}
+
+.std-cont {
+	.main-cont {
+		.cta-strip {
+			margin-top: 3.125em;
+			background-color: @banana;
+			.cta-strip-title {
+				font-weight: 400;
+			}
+		}
+	}
+}

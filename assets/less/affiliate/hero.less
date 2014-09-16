@@ -1,0 +1,154 @@
+.hero.affiliate {
+	.bg {
+		top: auto;
+		width: auto;
+		position: absolute;
+		bottom: 0;
+		right:0;
+		left: auto;
+		z-index: -1;
+		min-height: 100%;
+			min-width: 100%;
+		@media (min-width:1650px)  {
+			
+		}
+		@media(max-width:1366px) {
+			right: auto;
+			left: 0;
+		}
+		@media (min-width: 1920px) {
+			
+			min-height: 100%;
+			min-width: 100%;
+			max-width: 1000%;
+		}
+	}
+	.headline {
+		position: relative;
+		ul > li {
+			line-height: 1.5em;
+			margin-bottom: 0.45em;
+			&:before {
+				top: 0.45em;
+			}
+		}
+	}
+	.hero-content.demo {
+		.headline-demo-wrap {
+			max-width: 1170px;
+			position: relative;
+			margin: 0 auto;
+			@media (max-width: 1170px) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+		.headline.demo {
+			.btn {
+				font-family: @font-mont; -webkit-text-stroke: 0.15px;
+				font-size: 0.8125em;
+				padding: 2em 2.4em;
+				text-transform: uppercase;
+				width: auto;
+				display: block;
+				float: left;
+				> strong {
+					font-size: 1em;
+					color: white;
+					letter-spacing: inherit;
+					font-weight: 400;
+					display: inline;
+				}
+			}
+			p {
+				margin-bottom: 1em;
+			}
+			.headline-content {
+				padding: 0;
+				h1 {
+					margin-bottom: 0.4em;
+
+					@media (min-width: 1650px) {
+						font-size: 92px;
+						line-height: 79px;
+						margin-bottom: 42px;
+					}
+				}
+
+				@media(max-width: 920px) {
+					.sign-up-cta {
+						display: none;
+					}
+				}
+
+				@media(max-width: 767px) {
+					.sign-up-cta {
+						display: block;
+					}
+				}
+			}
+
+			#demo-block {
+				padding-right: 0em;
+				position: relative;
+				width: 56%;
+
+				.sign-up-cta {
+					display: none;
+					float: right;
+					width: 20em;
+					margin: 24px 30px 0px 0px;
+				}
+
+				@media(min-width: 1650px) {
+					width: 56%;
+				}
+
+				@media(max-width: 1440px) {
+					width: 43%;
+				}
+
+				@media(max-height: 900px) {
+					img {
+						height: 76%;
+					}
+				}
+
+				@media(max-width: 920px) {
+					img {
+						height: 60%;
+					}
+					.sign-up-cta {
+						display: block;
+					}
+				}
+			}
+			@media(max-width:590px) {
+				ul > li {
+					br {
+						display: none;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+.hero.heading-only {
+	h1 {
+		margin-top: 0.7em;
+		margin-bottom: 0.6em;
+	}
+	.bg {
+		z-index: -1;
+	}
+}
+
+@media (max-width: 767px) {
+	.hero.heading-only h1 {
+		font-size: 3em;
+		margin-top: 0.5em;
+	}
+}
+

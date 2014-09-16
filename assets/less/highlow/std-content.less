@@ -1,0 +1,138 @@
+.std-cont {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	.section-title {
+		font-size: 1.5em;
+		letter-spacing: 0.2em;
+		color: @mouse;
+		border-bottom-color: #e3e1e1;
+		margin-bottom: 1.5em;
+	}
+	
+	.main-cont {
+		&.article-page {
+			padding-right: 2.5em;
+		}
+		.section-sub-title {
+			font-size: 1.25em;
+			font-weight: 300;
+			letter-spacing: 0.025em;
+			color: @crude-oil;
+			margin-bottom: 1.75em;
+			font-family: @font-verb; -webkit-text-stroke: 0.3px;
+		}
+		a {
+			color: @carrot;
+			&:hover {
+				color: @tomato;
+				text-decoration: none;
+			}
+		}
+		b {
+			font-weight: 600;
+		}
+		p {
+			font-family: @font-test-body;
+			font-size: 0.9375em;
+			line-height: 1.53em;
+			color: @crude-oil;
+			font-weight: 400;
+			margin-bottom: 1.875em;
+		}
+		h2, 
+		h3 {
+			font-size: 1em;
+			font-family: @font-mont; -webkit-text-stroke: 0.65px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			margin-bottom: 1.75em;
+		}
+		h3 {
+			color: @carrot;
+			margin-bottom: 1em;
+		}
+		h4 {
+			font-weight: 600;
+			font-size: 1em;
+			color: @crude-oil;
+			margin-bottom: 1em;
+		}
+		h5, 
+		h6 {
+			font-weight: 600;
+			font-size: 0.875em;
+			color: @crude-oil;
+		}
+		h6 {
+			color: @carrot;
+			font-size: 0.875em;
+			margin-bottom: 1em;
+		}
+		img {
+			max-width: 100%;
+		}
+		> ul {
+			margin: 0;
+			padding: 0;
+			> li {
+				font-size: 0.9375em;
+				line-height: 1.53em;
+				font-weight: 400;
+				list-style-type: none;
+				padding-left: 1.625em;
+				margin-bottom: 0.625em;
+				color: @crude-oil;
+				position: relative;
+				font-family: @font-test-body;
+				&:before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 17px;
+					height: 14px;
+					top: 0.375em;
+					left: 0em;
+					background-repeat: no-repeat;
+					background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAYAAADJ7fe0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc3REJFQjVBRkVEQjExRTNCRDVFODU2RUE3ODJFREY5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc3REJFQjVCRkVEQjExRTNCRDVFODU2RUE3ODJFREY5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzdEQkVCNThGRURCMTFFM0JENUU4NTZFQTc4MkVERjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzdEQkVCNTlGRURCMTFFM0JENUU4NTZFQTc4MkVERjkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz40oR+IAAABL0lEQVR42qTTMUvDUBSG4RspammXLk6KrS5WuuqgOPgHxEm6iJQiWBUUB1dFEBwdtBURlU6C9i8IDnVwqzg4tVLcBB0qVURM38AXKSGowQMPSW5uzs09J7GeF8ZMgAjhGicoOAOxQtl0mGCxixHkEXUHgyRJY6ntei9okiEc6XwZTcxh8K9JIijpWMQ+znXv4iU3bv2WpBMHGMYVshr/1DGGbqfaYaSQRBwDSEgvLDSQ0cNpJfvADN15c5JsYv2Ht7lEDjUtktf4Gm7cvm9gVa++pcmuR3zpoS4cawtnqs13d94xq+tJnGr/dSXowSgOdf8e894v0KjaO5jQCn2qTX/7R6XWTuHVL4mNaVSw6KnJk7Z2h21U/f4FN26xom7UNPnBu6pfWLZtm/9GS4ABAFtbQUI5i73nAAAAAElFTkSuQmCC");
+				}
+			}
+			&.std-list {
+				> li {
+					padding: 2em;
+					.std-list-item {
+						position: relative;
+						padding-left: 18em;
+						.clearfix();
+						img {
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+						.std-list-item-content {
+							float: left;
+						}
+					}
+					h2.title {
+						margin-top: 0.25em;
+						font-size: 1.07em;
+						margin-bottom: 0.75em;
+					}
+					p {
+						font-size: 1em;
+						margin-top: 0;
+						margin-bottom: 1.125em;
+					}
+					.btn {
+						text-transform: uppercase;
+						padding: 0.8em 4.1em 0.6em;
+					}
+					background-color: @congee;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
